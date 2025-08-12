@@ -89,8 +89,17 @@
   programs.home-manager.enable = true;
   programs.git = {
    enable = true;
-   userName = "oleg.ignatiev";
-   userEmail = "oleg.ignatiev@ringcentral.com";
-   extraConfig.core.editor = "nano";
+   userName = "ddosmotr";
+   userEmail = "ddosmotr@gmail.com";
+   extraConfig.core.editor = "emacs";
+   includes = [
+      {
+        condition = "gitdir:~/Work/";
+        contents.user = {
+          name  = "oleg.ignatiev";
+          email = "oleg.ignatiev@ringcentral.com";
+        };
+      }
+    ];
   };
 }
