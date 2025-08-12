@@ -23,6 +23,7 @@
     pkgs.rustup
     pkgs.go
     pkgs.emacs
+    pkgs.k9s
     pkgs.vim
     pkgs.kubectl
 #    pkgs.ghostty
